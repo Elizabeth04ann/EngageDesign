@@ -1,6 +1,7 @@
 body {
     background-color: lightgray;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -60,7 +61,7 @@ body {
     padding: 20px;
 }
 .hero-image {
-    background-image: url();
+    background-image: url(web.JPG);
     height: 450px;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,9 +74,8 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: slategray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 200px;
+    color: whitesmoke;
+    font-style: italic;
 }  
 .flex-container {
     display: flex;

@@ -10,7 +10,7 @@ var quotes = [
     'What\'s the difference between a hippo and a zippo? The hippo is huge and the zippo is a little lighter.' ,
     'Why are the farmer\'s jokes not funny? Because they are corny.' ,
     'How do you fix a broken pumpkin? With a pumpkin patch.' ,
-
+    'A man walked into a bar...ouch!' ,
 
 
 

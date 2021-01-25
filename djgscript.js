@@ -1,3 +1,12 @@
+function responsiveNav() {
+    var x = document.getElementById("mynavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+
 var quotes = [
     'Why don\'t eggs tell jokes? They\'d crack each other up.' ,
     'I don\'t trust stairs. They\'er always up to something.' ,
@@ -11,12 +20,6 @@ var quotes = [
     'Why are the farmer\'s jokes not funny? Because they are corny.' ,
     'How do you fix a broken pumpkin? With a pumpkin patch.' ,
     'A man walked into a bar...ouch!' ,
-
-
-
-
-
-
 
 ]
 function newQuote() {

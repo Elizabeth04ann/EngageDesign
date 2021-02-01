@@ -1,40 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engage Contact</title>
-    <script src="webdesignscript.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="webdesignstyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wed Design</title>
+  <script src="webdesignscript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="webdesignstyle.css">
 </head>
-<body>
-  <div class="navbar" id="mynavbar">
-        <a href="index.html">Home</a>
-        <a href="photography.html">Photography</a>
-        <a class="active" href="webdesign.html">Web Design</a>
-        <a href="DJG.html">Jokes</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      
-      <div class="hero-image">
-        <div class="hero-text">
-    <h1 style="font-size:80px">Engage Design</h1>
-    <h1 style="font-size:40px"></h1>
+
+<body>  
+<div class="navbar" id="mynavbar">
+  <a href="index.html">Home</a>
+  <a href="photography.html">Photography</a>
+  <a class="active" href="webdesign.html">Web Design</a>
+  <a href="apps.html">Apps</a>
+  <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+  <i class="fa fa-bars" style="color: #ffffff;"></i>
+  </a>
+</div>
+
+<div class="banner">
+  <div class="banner-text">
+    <h1 style="font-size:80px">Web Design</h1>
+    <h2 style="font-size:30px"></h2>
+  </div>
+</div>
+  
+<section id="portfolio">
+  
+  <div class="project">
+    <img class="project__image" src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=700&q=80" />
+    <p>Search Results</p>
+    <h3 class="grid__title"></h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
     </div>
-      </div>
-      <div class="flex-container">
-        <div>Project 1</div>
-        <div>Project 2</div>
-        <div>Project 3</div>  
-        <div>Project 4</div>
-        <div>Project 5</div>
-        <div>Project 6</div>  
-        <div>Project 7</div>
-        <div>Project 8</div>
-      </div>
-      
+  </div>
+        
+  <div class="project">
+    <img class="project__image" src="https://images.unsplash.com/photo-1521104955835-ba91c70d6443?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38cdeda7d073c4b6d47a5776f184cba9&auto=format&fit=crop&w=700&q=80" />
+    <p>Guest Experience</p>
+    <h3 class="grid__title"></h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+        
+  <div class="project">
+    <img class="project__image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=700&q=80" />
+    <p>Mobile Version</p>
+    <h3 class="grid__title"></h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+        
+  <div class="project">
+    <img class="project__image" src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd4d735954f33290fbf984e4eb7abe32&auto=format&fit=crop&w=700&q=80" />
+    <p>Clear Connections</p>
+    <h3 class="grid__title"></h3>
+    <div class="grid__overlay">
+      <button class="viewbutton">view more</button>
+    </div>
+  </div>
+
+  <div class="overlay">
+    <div class="overlay__inner">
+      <button class="close">close X</button>
+      <img>
+    </div>
+  </div>
+
+</section>
+<footer>
+  <address class="contacts">
+    <h2>Elizabeth Messer</h2>
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram"></a><br>
+    <a href="mailto:messere22171@hocking.edu">messere22171@hocking.edu</a><br>
+    <a href="tel:555-555-5555">555-555-5555</a><br>
+    <a href="https://www.google.com/maps" style="color:black">123 Main St.<br>USA, 12345</a> 
+</address>
+
+</footer>
+     
+<script>
+const buttons = document.querySelectorAll('.project');
+const overlay = document.querySelector('.overlay');
+const overlayImage = document.querySelector('.overlay__inner img');
+
+function open(e) {
+overlay.classList.add('open');
+const src= e.currentTarget.querySelector('img').src;
+overlayImage.src = src;
+}
+
+function close() {
+overlay.classList.remove('open');
+}
+
+buttons.forEach(button => button.addEventListener('click', open));
+overlay.addEventListener('click', close);
+</script>
+
 </body>
 </html>

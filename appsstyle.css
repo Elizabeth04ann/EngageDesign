@@ -1,48 +1,53 @@
 body {
-    background-color: lightgray;
+    background-color: rgb(107, 170, 138);
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+  
+button {
+    cursor: pointer;
+}
+  
+/*nav bar*/
 .navbar {
     overflow: hidden;
     background-color: #333;
 }
-  
+    
 .navbar a {
     margin-right: 20px;
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
-    padding: 16px 18px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
 }
-  
+    
 .navbar a:hover {
     background-color: #ddd;
     color: black;
 }
-  
+    
 .navbar a.active {
-    background-color: grey;
-    color: white;
+    background-color: rgb(128, 128, 128);
+    color: #ffffff;
 }
-
+   
 .navbar .icon {
     display:none;
 }
   
+/*responsive nav bar*/
 @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
-    
       float: right;
       display: block;
     }
-  }
-  
+}
+    
 @media screen and (max-width: 600px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
@@ -55,34 +60,37 @@ body {
       display: block;
       text-align: left;
     }
-  }
-  
-.content {
-    padding: 20px;
 }
-
-.hero-image {
-    background-image: url();
-    height:900px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  
+/*banner*/
+.banner {
+    background-color: rgba(78, 122, 179, 0.904);
+    height: 450px;
     position: relative;
 }
-
-.hero-text {
+  
+.banner-text {
     text-align: center;
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
-}  
+    color:#ffffff;
+}
   
-button {   
+.banner-text h1 {
+    font-style:italic;
+}
+
+.jokebox {
+    text-align: center;
+}
+
+.jokebox button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: x-large;
-    position: relative;
     width:250px;
     height:250px;
+    margin-top:5%;
+    
 }

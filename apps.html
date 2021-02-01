@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke Generator</title>
+    <script src="appsscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="appsstyle.css">
+</head>
+
+<body>
+<div class="navbar" id="mynavbar">
+    <a href="index.html">Home</a>
+    <a href="photography.html">Photography</a>
+    <a href="webdesign.html">Web Design</a>
+    <a class="active" href="apps.html">Apps</a>
+    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+    <i class="fa fa-bars" style="color: #ffffff;"></i>
+    </a>
+</div>
+
+<div class="banner">
+    <div class="banner-text">
+        <h1 style="font-size:80px">Dad Joke</h1>
+        <h2 style="font-size:30px">Generator</h2>
+    </div>
+</div>
+
+<section class="jokebox">
+    <button onclick="newQuote()">
+        <div id="quoteDisplay">I've got a joke for you!</div>
+    </button> 
+</section>
+
+</body>
+</html>

@@ -59,7 +59,6 @@ button {
     float: none;
     display: block;
     text-align: left;
-    color:white;
   }
 }
 
@@ -184,7 +183,7 @@ button {
 
 .overlay__inner {
   background: #ffffff;
-  width: 700px;
+  width: 880px;
   padding: 20px;
   position: relative;
   opacity: 1;
@@ -206,8 +205,8 @@ button {
 }
 
 .project__image {
-  margin-left:0%;
-  margin-top: 0%;
+  margin-left: 0px;
+  margin-top:-6%;
   zoom:0;
 }
 

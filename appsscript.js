@@ -20,7 +20,10 @@ var quotes = [
     'Why are the farmer\'s jokes not funny? Because they are corny.' ,
     'How do you fix a broken pumpkin? With a pumpkin patch.' ,
     'A man walked into a bar...ouch!' ,
-
+    'I\'m so good at sleeping I can do it with my eye\'s closed.' ,
+    'I invented a new word: Plagiarism.' ,
+    'You know where I store all my dad jokes? In a dad-a-base.' ,
+    'Why couldn\'t the kids watch the pirate movie? Cause it is rated Aarrr.' ,
 ]
 function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quotes.length));

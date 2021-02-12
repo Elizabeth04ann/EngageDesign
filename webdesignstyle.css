@@ -130,6 +130,7 @@ button {
   letter-spacing: 2px;
 }
 
+/*overlay*/
 .project:hover .grid__overlay {
   transform: translateY(0%);
 }
@@ -183,7 +184,7 @@ button {
 
 .overlay__inner {
   background: #ffffff;
-  width: 880px;
+  width: 700px;
   padding: 20px;
   position: relative;
   opacity: 1;
@@ -200,14 +201,45 @@ button {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .close:hover {
   color: rgba(71, 69, 69, 0.7);
 }
 
 .project__image {
-  margin-left: 0px;
-  margin-top:-6%;
+  
+  margin-left:0%;
+  margin-top: 0%;
   zoom:0;
+}
+
+/*responsive image*/
+@media (max-width: 800px) {
+  .overlay__inner {
+  width: 535px;
+  height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .responsive {
+  width:535px;
+  height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay__inner {
+  width: 425px;
+  height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive {
+  width:425px;
+  height: auto;
+  }
 }
 
 /*responsive flexbox*/
@@ -231,8 +263,7 @@ footer {
   background-color: rgb(191, 201, 224);
   min-height: 300px;
   text-align: center;
-  padding-top: 20px;
- 
+  padding-top: 20px; 
 }
 
 .contacts {
@@ -243,6 +274,7 @@ font-size:x-large;
 h2 {
 margin-bottom: 0px;
 }
+
 a:link{
   color:black;
   text-decoration: none;
@@ -261,8 +293,8 @@ a:link{
   text-align: center;
   text-decoration: none;
   margin: 10px 2px;
-
 }
+
 .fa-twitter {
   background: #55ACEE;
   color: white;
@@ -272,8 +304,8 @@ a:link{
   text-align: center;
   text-decoration: none;
   margin: 10px 2px;
-
 }
+
 .fa-instagram {
   background: #125688;
   color: white;
@@ -283,5 +315,4 @@ a:link{
   text-align: center;
   text-decoration: none;
   margin: 10px 2px;
-
 }

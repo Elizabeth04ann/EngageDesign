@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(107, 170, 138);
+    background-color: rgba(78, 122, 179, 0.904);
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -62,25 +62,11 @@ button {
       color:white;
     }
 }
-  
-/*banner*/
-.banner {
-    background-color: rgba(78, 122, 179, 0.904);
+
+/*sky*/
+#sky {
     height: 450px;
     position: relative;
-}
-  
-.banner-text {
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:#ffffff;
-}
-  
-.banner-text h1 {
-    font-style:italic;
 }
 
 .jokebox {
@@ -93,5 +79,24 @@ button {
     width:250px;
     height:250px;
     margin-top:5%;
-    
+}
+  
+/*grass*/
+.grass {
+    background-color: rgb(107, 170, 138);
+    height: 390px;
+    position: relative;
+}
+  
+.grass-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+}
+  
+.grass-text h1 {
+    font-style:italic;
 }

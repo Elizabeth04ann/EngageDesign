@@ -15,12 +15,12 @@ button {
 }
   
 .navbar a {
-  margin-right: 20px;
+  margin-right: 0px;
   float: left;
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 30px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -64,6 +64,8 @@ button {
 
 /*banner*/
 .banner {
+  background-color: rgba(78, 122, 179, 0.904);
+  background-image: linear-gradient(to bottom right, rgba(78, 122, 179, 0.904), #E3E4FA );
   height: 450px;
   position: relative;
 }
@@ -92,7 +94,6 @@ button {
 
 .project {
   position: relative;
-  background:  rgba(78, 122, 179, 0.904);
   overflow: hidden;
   flex: 25%;
   max-width: 25%;
@@ -130,6 +131,7 @@ button {
   letter-spacing: 2px;
 }
 
+/*overlay*/
 .project:hover .grid__overlay {
   transform: translateY(0%);
 }
@@ -157,6 +159,7 @@ button {
   text-transform: uppercase;
   padding: 10px;
 }
+
 .grid__overlay button:hover {
   transition: all 0.3s ease-in-out;
   background: #ffffff;
@@ -200,6 +203,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .close:hover {
   color: rgba(71, 69, 69, 0.7);
 }
@@ -213,29 +217,13 @@ button {
 /*responsive image*/
 @media (max-width: 800px) {
   .overlay__inner {
-  width: 535px;
-  height: auto;
+  width:90%;
   }
 }
 
 @media (max-width: 800px) {
   .responsive {
-  width:535px;
-  height: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  .overlay__inner {
-  width: 425px;
-  height: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  .responsive {
-  width:425px;
-  height: auto;
+    width:100%;
   }
 }
 
@@ -257,11 +245,11 @@ button {
 }
 
 footer {
-  background-color: rgb(191, 201, 224);
+  background-color: rgba(78, 122, 179, 0.904);
+  background-image: linear-gradient(to top right, rgba(78, 122, 179, 0.904), #E3E4FA );
   min-height: 300px;
   text-align: center;
   padding-top: 20px;
- 
 }
 
 .contacts {
@@ -272,6 +260,7 @@ font-size:x-large;
 h2 {
 margin-bottom: 0px;
 }
+
 a:link{
   color:black;
   text-decoration: none;
@@ -290,8 +279,8 @@ a:link{
   text-align: center;
   text-decoration: none;
   margin: 10px 2px;
-
 }
+
 .fa-twitter {
   background: #55ACEE;
   color: white;
@@ -301,8 +290,8 @@ a:link{
   text-align: center;
   text-decoration: none;
   margin: 10px 2px;
-
 }
+
 .fa-instagram {
   background: #125688;
   color: white;
@@ -312,5 +301,4 @@ a:link{
   text-align: center;
   text-decoration: none;
   margin: 10px 2px;
-
 }
